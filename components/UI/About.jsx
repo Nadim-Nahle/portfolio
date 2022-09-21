@@ -57,7 +57,7 @@ const About = () => {
               </button>
 
               <button className="secondary__btn">
-                <Link href="https://drive.google.com/file/d/1NzxwftsliBlZDpx71Fp9pb632PC7zjpT/view?usp=sharing">
+                <Link href="https://drive.google.com/file/d/1wZuW86NiKV1RcR4KJ_iOF-je-mZbjX3D/view?usp=sharing">
                   <a target="_blank">Download CV</a>
                 </Link>
               </button>
