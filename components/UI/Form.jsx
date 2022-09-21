@@ -3,6 +3,7 @@ import classes from "../../styles/form.module.css";
 import axios from "axios";
 
 const Form = () => {
+  const [name, setName] = useState("");
   const submitHandler = (e) => {
     e.preventDefault();
     axios.defaults.headers.post["Content-Type"] = "application/json";
