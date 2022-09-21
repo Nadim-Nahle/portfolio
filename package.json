@@ -18,7 +18,8 @@
     "reactstrap": "^9.1.1",
     "remixicon": "^2.5.0",
     "slick-carousel": "^1.8.1",
-    "sweetalert": "^2.1.2"
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.4.32"
   },
   "devDependencies": {
     "eslint": "8.18.0",

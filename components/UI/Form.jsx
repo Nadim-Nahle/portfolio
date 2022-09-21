@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "../../styles/form.module.css";
 import axios from "axios";
-import swal from "@sweetalert/with-react";
+import Swal from "sweetalert2";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -16,8 +16,49 @@ const Form = () => {
         message: message,
         email: email,
       })
-      .then((response) => console.log(response))
-      .catch((error) => console.log(error));
+      .then((response) => {
+        if (response.data.success === "true") {
+          Swal.fire({
+            title: "Message Sent!",
+            width: 600,
+            padding: "3em",
+            color: "#00fa15",
+            background: "#000000 ",
+            backdrop: `
+              rgba(0,0,123,0.4)
+
+              fill
+            `,
+          });
+        } else {
+          Swal.fire({
+            title: "Message Not Sent!",
+            width: 600,
+            padding: "3em",
+            color: "#00fa15",
+            background: "#000000 ",
+            backdrop: `
+              rgba(0,0,123,0.4)
+
+              fill
+            `,
+          });
+        }
+      })
+      .catch((error) =>
+        Swal.fire({
+          title: "Message Not Sent!",
+          width: 600,
+          padding: "3em",
+          color: "#00fa15",
+          background: "#000000 ",
+          backdrop: `
+          rgba(0,0,123,0.4)
+
+          fill
+        `,
+        })
+      );
   };
   return (
     <form className={`${classes.form}`} onSubmit={submitHandler}>
