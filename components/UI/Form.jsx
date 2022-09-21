@@ -37,7 +37,13 @@ const Form = () => {
         />
       </div>
       <div className={`${classes.form__group}`}>
-        <textarea type="text" rows={5} placeholder="Message" required />
+        <textarea
+          type="text"
+          rows={5}
+          placeholder="Message"
+          onChange={(e) => setMessage(e.target.value)}
+          required
+        />
       </div>
 
       <button className="primary__btn" type="submit">
