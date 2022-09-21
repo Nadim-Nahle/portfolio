@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import classes from "../../styles/form.module.css";
 import axios from "axios";
+import swal from "@sweetalert/with-react";
 
 const Form = () => {
   const [name, setName] = useState("");
