@@ -5,15 +5,15 @@ import axios from "axios";
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEamail] = useState("");
-  const [messages, setMessage] = useState("");
+  const [message, setMessage] = useState("");
   const submitHandler = (e) => {
     e.preventDefault();
     axios.defaults.headers.post["Content-Type"] = "application/json";
     axios
       .post("https://formsubmit.co/ajax/nahlenadim@gmail.com", {
-        name: "FormSubmit",
-        message: "I'm from Devro LABS",
-        email: "nadim@gmail.com",
+        name: name,
+        message: message,
+        email: email,
       })
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
