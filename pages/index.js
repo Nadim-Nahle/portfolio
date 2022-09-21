@@ -7,11 +7,14 @@ import Contact from "../components/UI/Contact";
 
 export default function Home() {
   return (
-    <Fragment>
-      <Hero />
-      <About />
-      <Portfolio />
-      <Contact />
-    </Fragment>
+    <>
+      <title>My Portfolio</title>
+      <Fragment>
+        <Hero />
+        <About />
+        <Portfolio />
+        <Contact />
+      </Fragment>
+    </>
   );
 }
