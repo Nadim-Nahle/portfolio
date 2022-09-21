@@ -13,6 +13,7 @@ const Form = () => {
       .post("https://formsubmit.co/ajax/nahlenadim@gmail.com", {
         name: "FormSubmit",
         message: "I'm from Devro LABS",
+        email: "nadim@gmail.com",
       })
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
@@ -20,7 +21,12 @@ const Form = () => {
   return (
     <form className={`${classes.form}`} onSubmit={submitHandler}>
       <div className={`${classes.form__group}`}>
-        <input type="text" placeholder="Your Name" required />
+        <input
+          type="text"
+          placeholder="Your Name"
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
       </div>
       <div className={`${classes.form__group}`}>
         <input type="email" placeholder="Email Address" required />
