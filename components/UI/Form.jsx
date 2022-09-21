@@ -29,7 +29,12 @@ const Form = () => {
         />
       </div>
       <div className={`${classes.form__group}`}>
-        <input type="email" placeholder="Email Address" required />
+        <input
+          type="email"
+          placeholder="Email Address"
+          onChange={(e) => setEamail(e.target.value)}
+          required
+        />
       </div>
       <div className={`${classes.form__group}`}>
         <textarea type="text" rows={5} placeholder="Message" required />
