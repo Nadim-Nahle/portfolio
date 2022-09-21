@@ -5,7 +5,7 @@ import axios from "axios";
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEamail] = useState("");
-
+  const [messages, setMessage] = useState("");
   const submitHandler = (e) => {
     e.preventDefault();
     axios.defaults.headers.post["Content-Type"] = "application/json";
