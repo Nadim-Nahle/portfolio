@@ -21,6 +21,16 @@ const portfolio = [
     github: 'https://github.com/Nadim-Nahle/NFTs-Website',
   },
   {
+    id: "05",
+    title: "Kudos App",
+    img: "/images/kudos.PNG",
+    category: "Web App",
+    keyword: ["Remix", "MongoDB", "Prisma", "TypeScript"],
+    liveUrl: "https://kudos-app.vercel.app/",
+    github: 'https://github.com/Nadim-Nahle/remix-full-satck',
+  },
+
+  {
     id: "01",
     title: "Movie Fanatics",
     img: "/images/movie.png",
@@ -39,15 +49,6 @@ const portfolio = [
     github: 'https://github.com/Nadim-Nahle/Ecommerce-Vue-Django#implementation',
   },
 
-  {
-    id: "05",
-    title: "Contacts App",
-    img: "/images/phone.png",
-    category: "Web App",
-    keyword: ["React", "Express", "MongoDB"],
-    liveUrl: "https://github.com/Nadim-Nahle/contacts-app-full-stack",
-    github: 'https://github.com/Nadim-Nahle/contacts-app-full-stack',
-  },
 
 
   {
