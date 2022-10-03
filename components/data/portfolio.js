@@ -60,6 +60,15 @@ const portfolio = [
     liveUrl: "https://nadim-portfolio.vercel.app",
     github: 'https://github.com/Nadim-Nahle/portfolio',
   },
+   {
+    id: "08",
+    title: "Contacts App",
+    img: "/images/phone.png",
+    category: "Web App",
+    keyword: ["React", "Express", "Leaflet Maps"],
+    liveUrl: "https://contacts-app-nadim.vercel.app/",
+    github: 'https://github.com/Nadim-Nahle/contacts-app-full-stack',
+  },
 
 ];
 
