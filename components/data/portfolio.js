@@ -36,7 +36,7 @@ const portfolio = [
     img: "/images/movie.png",
     category: "Web App",
     keyword: ["React", "Node", "Socket", "MongoDB"],
-    liveUrl: "https://github.com/Nadim-Nahle/Movies-Fanatics#implementation",
+    liveUrl: "https://movies-fanatics.vercel.app/",
     github: 'https://github.com/Nadim-Nahle/Movies-Fanatics',
   },
   {
@@ -45,8 +45,8 @@ const portfolio = [
     img: "/images/django.PNG",
     category: "Web App",
     keyword: ["Vue", "Django", "SQLite"],
-    liveUrl: "https://github.com/Nadim-Nahle/Ecommerce-Vue-Django",
-    github: 'https://github.com/Nadim-Nahle/Ecommerce-Vue-Django#implementation',
+    liveUrl: "https://github.com/Nadim-Nahle/Ecommerce-Vue-Django#implementation",
+    github: 'https://github.com/Nadim-Nahle/Ecommerce-Vue-Django',
   },
 
 
@@ -59,6 +59,15 @@ const portfolio = [
     keyword: ["Next.js", "Web design", "UI-UX"],
     liveUrl: "https://nadim-portfolio.vercel.app",
     github: 'https://github.com/Nadim-Nahle/portfolio',
+  },
+   {
+    id: "08",
+    title: "Contacts App",
+    img: "/images/phone.png",
+    category: "Web App",
+    keyword: ["React", "Express", "Leaflet Maps"],
+    liveUrl: "https://contacts-app-nadim.vercel.app/",
+    github: 'https://github.com/Nadim-Nahle/contacts-app-full-stack',
   },
 
 ];
